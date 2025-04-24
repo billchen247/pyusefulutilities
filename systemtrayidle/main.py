@@ -20,6 +20,7 @@ def keep_active(interval_minutes, stop_event):
         dy = random.randint(-3, 3)
         pyautogui.moveRel(dx, dy, duration=0.1)
         pyautogui.moveRel(-dx, -dy, duration=0.1)
+        print(f"Simulated activity at {time.strftime('%H:%M:%S')}")
         time.sleep(interval_minutes * 60)
 
 # Start the background thread
